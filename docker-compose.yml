@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  spark:
+    build: .
+    container_name: app
+    environment:
+      - SPARK_DRIVER_MEMORY=4g
+      - SPARK_EXECUTOR_MEMORY=4g
+    volumes:
+      - ./scripts:/app/scripts
+      - ./data:/app/data
+    working_dir: /app
+    networks:
+      - networks
+
+networks:
+  networks:
