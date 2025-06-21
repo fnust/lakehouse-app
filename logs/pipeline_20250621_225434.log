@@ -1,0 +1,16 @@
+2025-06-21 22:54:42,180 - INFO - main - Spark session initialized
+2025-06-21 22:54:42,180 - INFO - bronze_layer - BRONZE LAYER PROCESSING
+2025-06-21 22:54:42,180 - INFO - bronze_layer - Loading raw data from /app/data/input/train.csv
+2025-06-21 22:54:51,551 - INFO - bronze_layer - Successfully saved 100000 records to Bronze layer
+2025-06-21 22:54:51,551 - INFO - silver_layer - SILVER LAYER PROCESSING
+2025-06-21 22:54:53,228 - INFO - silver_layer - Silver layer contains 11899 customer records
+2025-06-21 22:54:55,864 - INFO - silver_layer - Silver layer processing completed successfully
+2025-06-21 22:54:55,864 - INFO - gold_layer - GOLD LAYER PROCESSING
+2025-06-21 22:54:59,288 - INFO - gold_layer - Gold layer created with 11899 records
+2025-06-21 22:54:59,288 - INFO - main - CREDIT RISK MODEL TRAINING
+2025-06-21 22:55:00,539 - INFO - main - Train samples: 9586, Test samples: 2313
+2025-06-21 22:55:00,572 - INFO - main - Training pipeline...
+2025-06-21 22:55:08,083 - INFO - main - Model metrics - Accuracy: 0.85, F1: 0.79, Precision: 0.73, Recall: 0.85
+2025-06-21 22:55:18,031 - INFO - main - Credit risk model training completed successfully
+2025-06-21 22:55:18,032 - INFO - main - PIPELINE COMPLETED SUCCESSFULLY
+2025-06-21 22:55:18,301 - INFO - main - Spark session stopped
